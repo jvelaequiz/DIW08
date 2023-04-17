@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario Petinder">
+    <meta name="author" content="Javier Vela">
+    <meta name="keywords" content="Petinder, join">
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <title>Hazte socio</title>
+</head>
+<body class="page-join">
+  <header>
+    <nav class="container">
+      <a class="link-logo" href="indexx.html">
+        <img class="logo" src="img/logo.svg" alt="logo petinder"> 
+      </a>
+      <ul class="menu-links">
+        <li><a href="about.html">Sobre petinder</a></li>
+        <li><a href="tshirt.html">Camiseta</a></li>
+        <li><a href="join.html"><strong>Hazte socio</strong></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="title">Házte socio</h1>
+      <p>Colabora con Petinder haciéndote socio por solo 15 euros mensuales. Con muy poco puedes ayudar mucho a nuestros amigos peludos. Además puedes comprar nuestra exclusiva camiseta por solo 10 euros que se añadirán al primer pago. Rellena el siguiente formulario para unirte a nosotros:</p>
+
+      <form>
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <label for="nombre" class="required">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" pattern="[a-zA-Z'-]+" maxlength="64" minlength="2" autofocus required>
+
+          <label for="apellidos" class="required">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" pattern="[a-zA-Z'-]+" maxlength="128" minlength="2" required>
+
+          <label for="correo" class="required">Correo Electronico:</label>
+          <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+
+          <label for="dni" class="required">DNI:</label>
+          <input type="text" id="dni" name="dni" placeholder="DNI" pattern="^[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKE]$" required>
+
+          <label for="fecha">Fecha de Nacimiento:</label>
+          <input type="text" id="fecha" name="fecha" pattern="^(0[1-9]|[1-2][0-9]|3[0-1])\/(0[1-9]|1[0-2])\/(19|20)\d{2}$" placeholder="dd/mm/aaaa" >
+		  <!--<input type="date" id="fecha" name="fecha"  placeholder="dd/mm/aaaa" -->
+		  <!--No se puede poner un placeholder a un input de tipo "date" -->
+        </fieldset>
+
+        <fieldset>
+          <legend>Dirección</legend>
+
+          <label for="calle" class="required">Calle y número:</label>
+          <input type="text" id="calle" name="calle"  placeholder="Calle y número" required>
+
+          <label for="ciudad" class="required">Ciudad:</label>
+          <input type="text" id="ciudad" name="ciudad"  placeholder="Ciudad" required>
+
+          <label for="provincia" class="required">Provincia:</label>
+          <input type="text" id="provincia" name="provincia"  placeholder="Provincia" required>
+
+          <label for="cp" class="required">Código Postal:</label>
+          <input type="text" id="cp" name="cp"  placeholder="Código Postal" pattern="^(0[1-9]|[1-4][0-9]|5[0-2])\d{3}$" required>
+		  <!--           <input type="number" id="cp" name="cp"  placeholder="Código Postal" pattern="^(0[1-9]|[1-4][0-9]|5[0-2])\d{3}$" required> -->
+
+          <label for="pais">País:</label>
+ 		  <select id="pais"  name="pais">
+			  <option value="" disabled selected hidden>Seleccionar</option>
+			  <option value="Andorra" >Andorra</option>
+			  <option value="España" >España</option>
+              <option value="Francia" >Francia</option>
+			  <option value="Otro" >Otro</option>  
+		  </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos de pago y camiseta</legend>
+
+          <span><strong>Metodo de pago:</strong></span><br>
+		  <label for="Transferencia"></label> 
+          <input type="radio"  name="pago" id="Transferencia" title="transferencia" value="transferencia" checked>
+          <span class="radio">Transferencia</span> 
+		  <label for="tarjeta"></label>
+          <input type="radio" name="pago" id="tarjeta" title="tarjeta" value="tarjeta">
+          <span class="radio">Tarjeta de crédito</span>
+		  <label for="paypal"></label>
+          <input type="radio" name="pago" id="paypal" title="paypal" value="paypal">
+          <span class="radio">Paypal</span>
+          <br><br>
+          <label for="camiseta"><strong>Camiseta</strong></label>
+          <p>Si quieres que te enviemos la camiseta Petinder por 10€ más, selecciona la talla a continuación.</p>
+          <label for="camiseta">Talla Camiseta</label><br>
+          <select  name="camiseta" id="camiseta" class="camiseta" >
+              <option value="" disabled selected hidden>No quiero camiseta</option>
+            <optgroup label="Mujeres">
+              <option value="mujeresS">S</option>
+              <option value="mujeresM">M</option>
+              <option value="mujeresL">L</option>
+              <option value="mujeresXL">XL</option>
+            </optgroup>
+            <optgroup label="Hombres">
+              <option value="hombresS">S</option>
+              <option value="hombresM">M</option>
+              <option value="hombresL">L</option>
+              <option value="hombresXL">XL</option>
+              <option value="hombresXXL">XXL</option>
+            </optgroup>
+          </select>
+
+        </fieldset>
+        <em>*Todos los campos marcados son obligatorios</em>
+        <br>
+		<label for="micheckbox"></label>
+        <input type="checkbox" id="micheckbox" name="micheckbox" value="1" class="checkbox">
+        <span>He leído y acepto la política de privacidad y las condiciones de uso</span>
+        <br>
+        <button id="enviar" >Enviar</button>
+        <br>
+      </form>
+    </div>
+  </main>  
+  <footer>
+    <div class="container">
+      <span>2021 © Petinder - Javier Vela Equiza</span>
+      <ul class="legal-links">
+        <li><a href="">Términos y condiciones de uso</a></li>
+        <li><a href="">Política de privacidad</a></li>
+        <li><a href="">Cookies</a></li>
+        <li><a href="">FAQ</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+</body>
+</html>

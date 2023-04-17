@@ -1,0 +1,21 @@
+/* Estilos para el contenedor de los botones */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Ajusta la altura según la cantidad de botones */
+}
+
+/* Estilos para los botones */
+button {
+  padding: 10px 20px;
+  margin: 10px 0; /* Añade un margen superior e inferior para separar los botones */
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+h1{color:#4CAF50}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas -->
+  <!-- https://grid.layoutit.com/ -->
+  <head>  
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="GCM-Sanson es la web del circo más espectacular del mundo">
+      <meta name="author" content="Javier Vela">
+      <meta name="keywords" content="Gran Circo Mundial Sanson">
+      <link rel="stylesheet" href="css/sanson.css"> 
+      <title>GCM-Sanson</title>
+      <style>
+      .header {
+        grid-area:HEADER;
+        color: white;
+        background: black;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+      .content {
+        grid-area: CONTENT ;
+      }
+	  .sidebar {
+		  grid-area: ASIDE;
+		}
+      .footer1 {
+        grid-area: FOOTER1;
+		background-color:#e08c32;
+      }
+	  .footer2 {
+        grid-area: FOOTER2;
+      }
+	  .footer3 {
+        grid-area: FOOTER3;
+		background-color:#e08c32;
+      }
+	  
+      /* Having defined these names I then create my layout. This time, instead of placing my items using line numbers specified on the items themselves, I create the whole layout on the grid container.*/
+      .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* Define columnas */
+      grid-template-rows: 100px 1fr 1fr 1fr 100px /* Aquí se establece la altura de la segunda fila en 100px */
+      gap: 0px 0px;/* Espacio entre columnas y filas */ 
+      grid-template-areas:
+        "HEADER    HEADER  HEADER "
+        "CONTENT  CONTENT  ASIDE "
+        "CONTENT  CONTENT  ASIDE "
+        "CONTENT  CONTENT  ASIDE "
+        "FOOTER1   FOOTER2   FOOTER3 ";
+      }
+      /*Using this method we do not need to specify anything at all on the individual grid items, everything happens on our grid container. We can see the layout described as the value of the grid-template-areas property.*/
+      /*
+      @media (min-width: 500px) {
+        .wrapper {
+          grid-template-columns: repeat(9, 1fr);
+          grid-template-areas:
+            "hd hd hd hd   hd   hd   hd   hd   hd"
+            "sd sd sd main main main main main main"
+            "sd sd sd  ft  ft   ft   ft   ft   ft";
+        }
+      }
+      @media (min-width: 700px) {
+        .wrapper {
+          grid-template-areas:
+            "hd hd hd   hd   hd   hd   hd   hd hd"
+            "sd sd main main main main main ft ft";
+        }
+      }
+      */
+      </style>
+  </head>
+<body>
+<div class="wrapper">
+	<div class="header">
+		<h2>GRAN CIRCO MUNDIAL</h2>
+		<h3>Presenta:¡El hombre mas fuerte del mundo!</h3>
+	</div>
+    <div class="content poster">  
+      <figure>
+          <img src="img/promotionalposterofastrongmaninacircuswithanimals.jpg" alt="Poster Promocional de hombre fuerte en un circo con animales exóticos" >
+		  <figcaption>EL COLOSO DE LOS MUSCULOS DE ACERO</figcaption>
+	  </figure>
+	</div> 
+	<div class="sidebar">
+		<div class="texto-vertical">
+			<p>Texto vertical</p>
+		</div>
+	</div>
+	<div class="footer1">
+		<div class="rcorners1">
+			<h3>GRAN OLIMPIADA DEL CIRCO</h3>
+			<p>Con las mejores atracciones de los <strong>5</strong> continentes</p>
+		</div>
+	</div>
+	<div class="footer2">
+		<h4>Instalado en la AVENIDA JOSE ANTONIO</h4>
+		<h2>BARCELONA</h2>
+		<p class="fecha"> Del <em>2</em> al <em>18</em> noviembre<p>
+	</div>
+	<div class="footer3">
+		<div  class="rcorners2">
+			<p>!<strong>20</strong> ATRACCIONES INTERNACIONALES!</p>
+			<p>!<strong>25</strong> ANIMALES Y FIERAS!</p>
+			<p>!<strong>100</strong> ARTISTAS MUNDIALES!</p>
+		</div>
+	</div>
+	<div class="centered-text">
+		<h1>SANSON</h1>
+	</div>
+</div>
+</body>
+</html>
+
+

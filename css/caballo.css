@@ -1,0 +1,272 @@
+h1{
+	color:red;
+}
+
+.animacion-1 {
+
+  background-image: url(../img/1.png);
+  border: 2px solid black;
+  height: 115px;
+}
+
+.animacion-2{
+  background-image: url(../img/2.png);
+  border: 2px solid black;
+  height: 115px;
+}
+/*
+.animacion-3 {
+  background-image: url("img/tres.png");
+
+}
+
+.animacion-4 {
+  background-image: url('img/4.png');
+}
+
+.animacion-5 {
+  background-image: url('img/5.png');
+}
+
+.animacion-6 {
+  background-image: url('img/6.png');
+}
+
+.animacion-7 {
+  background-image: url('img/7.png');
+}
+
+.animacion-8 {
+  background-image: url('img/8.png');
+}
+
+.animacion-9 {
+  background-image: url('img/9.png');
+}
+
+.animacion-10 {
+  background-image: url('img/10.png');
+}
+
+.animacion-11 {
+  background-image: url('img/11.png');
+}
+
+.animacion-12 {
+  background-image: url('img/12.png');
+}
+
+.animacion-13 {
+  background-image: url('img/13.png');
+}
+
+.animacion-14 {
+  background-image: url('img/14.png');
+}
+
+.animacion-15 {
+  background-image: url('img/15.png');
+}
+
+.animacion-16 {
+  background-image: url('img/16.png');
+}
+
+.animacion-17 {
+  background-image: url('img/17.png');
+}
+
+.animacion-18 {
+  background-image: url('img/18.png');
+}
+
+.animacion-19 {
+  background-image: url('img/19.png');
+}
+
+.animacion-20 {
+  background-image: url('img/20.png');
+}
+*/
+@keyframes animacion-1 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*
+@keyframes animacion-2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-3 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-4 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-5 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-6 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-7 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-8 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-9 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-10 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-11 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-12 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-13 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-14 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-15 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-16 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-17 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-18 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-19 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacion-20 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+*/
+
