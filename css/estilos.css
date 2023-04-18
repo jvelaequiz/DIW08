@@ -378,6 +378,7 @@ label.required::after {
   padding: 20px;
 }
 
+/*****ANIMACION 1*******/
 /*
 1-Crea un contenedor para la imagen en tu archivo HTML. Puedes hacer esto utilizando una etiqueta div con un id para identificarlo:
 2-En tu archivo CSS, establece la posición del contenedor como "relative" y la posición de la imagen como "absolute". Esto permitirá que la imagen se mueva dentro del contenedor:
@@ -414,7 +415,7 @@ label.required::after {
   }
 }
 
-
+/*****ANIMACION 2*******/
 @keyframes pulse {
   0% {
    background-color: var(--secondary-color);
@@ -427,6 +428,8 @@ label.required::after {
   }
 }
 
+
+/*****ANIMACION 3*******/
 #bailar {
   display: inline-block;
   font-size: 24px;
