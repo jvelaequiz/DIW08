@@ -3,73 +3,6 @@ h1{
 }
 
 /* Define the keyframes */
-/*
-@keyframes animation {
-  0% {
-    background-image: url(../img/1.png);background-repeat: no-repeat;
-  }
-  5% {
-    background-image: url(../img/2.png);background-repeat: no-repeat;
-  }
-  10% {
-    background-image: url(../img/3.png);background-repeat: no-repeat;
-  }
-  15% {
-    background-image: url(../img/4.png);background-repeat: no-repeat;
-  }
-  20% {
-    background-image: url(../img/5.png);background-repeat: no-repeat;
-  }
-  25% {
-    background-image: url(../img/6.png);background-repeat: no-repeat;
-  }
-  30% {
-    background-image: url(../img/7.png);background-repeat: no-repeat;
-  }
-  35% {
-    background-image: url(../img/8.png);background-repeat: no-repeat;
-  }
-  40% {
-    background-image: url(../img/9.png);background-repeat: no-repeat;
-  }
-  45% {
-    background-image: url(../img/10.png);background-repeat: no-repeat;
-  }
-  50% {
-    background-image: url(../img/11.png);background-repeat: no-repeat;
-  }
-  55% {
-    background-image: url(../img/12.png);background-repeat: no-repeat;
-  }
-  60% {
-    background-image: url(../img/13.png);background-repeat: no-repeat;
-  }
-  65% {
-    background-image: url(../img/14.png);background-repeat: no-repeat;
-  }
-  70% {
-    background-image: url(../img/15.png);background-repeat: no-repeat;
-  }
-  75% {
-    background-image: url(../img/16.png);background-repeat: no-repeat;
-  }
-  80% {
-    background-image: url(../img/17.png);background-repeat: no-repeat;
-  }
-  85% {
-    background-image: url(../img/18.png);background-repeat: no-repeat;
-  }
-  90% {
-    background-image: url(../img/19.png);background-repeat: no-repeat;
-  }
-  95% {
-    background-image: url(../img/20.png);background-repeat: no-repeat;
-  }
-  100% {
-    background-image: url(../img/1.png);background-repeat: no-repeat;
-  }
-}*/
-
 @keyframes animation {
   0% {
     width: 100px;
@@ -160,7 +93,7 @@ h1{
 /* Apply the animation to an element */
 .caballo {
   animation-name: animation;
-  animation-duration: 3s;
+  animation-duration: 2.2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
