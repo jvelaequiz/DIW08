@@ -214,19 +214,21 @@ Con esto, el texto en el centro de la página se moverá de arriba a abajo en un
   }
 
   .texto-vertical{
-  padding-top: 10%;
-  writing-mode: vertical-rl;
-  position: fixed;
-  text-transform: uppercase;
-  justify-content: start;
-  top: 10;
-  right: 0;
-  padding: 10px;
-  color: #282828;
-  background-color:#e08c32;
-  font-size: 26px;
-  text-align: center;
-}
+    padding-top: 10%;
+    writing-mode: vertical-rl;
+    position: fixed;
+    text-transform: uppercase;
+    justify-content: start;
+    top: 10%;
+    right: 0;
+    padding: 10px;
+    color: #282828;
+    background-color:#e08c32;
+    font-size: 26px;
+      text-overflow: 2;
+
+    text-align: center;
+  }
 
 }
 
