@@ -51,7 +51,7 @@ body{
 .wrapper {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr; /* Define columnas */
-grid-template-rows: 100px 1fr 1fr 1fr 100px /* Aquí se establece la altura de la segunda fila en 100px */
+grid-template-rows: 100px 1fr 1fr 1fr 100px; /* Aquí se establece la altura de la segunda fila en 100px */
 gap: 0px 0px;/* Espacio entre columnas y filas */ 
 grid-template-areas:
   "HEADER    HEADER  HEADER "
@@ -219,14 +219,12 @@ Con esto, el texto en el centro de la página se moverá de arriba a abajo en un
   position: fixed;
   text-transform: uppercase;
   justify-content: start;
-  top: 10;
+  top: 10px;
   right: 0;
   padding: 10px;
   color: #282828;
   background-color:#e08c32;
   font-size: 26px;
-  line-height: 1.5;
-  text-overflow: 2;
   text-align: center;
 }
 
@@ -257,13 +255,12 @@ Con esto, el texto en el centro de la página se moverá de arriba a abajo en un
   
   text-transform: uppercase;
   justify-content: start;
-  top: 10;
+  top: 10px;
   right: 0;
   padding: 10px;
   
   font-size: 26px;
   line-height: 1.5;
-  text-overflow: 2;
   text-align: center;
 }
 
