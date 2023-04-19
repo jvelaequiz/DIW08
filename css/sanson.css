@@ -225,8 +225,6 @@ Con esto, el texto en el centro de la página se moverá de arriba a abajo en un
     color: #282828;
     background-color:#e08c32;
     font-size: 26px;
-      text-overflow: 2;
-
     text-align: center;
   }
 

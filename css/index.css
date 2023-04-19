@@ -22,12 +22,15 @@ h1{color:#4CAF50}
 
 .button {
   display: inline-block;
+  margin: 10px 0; /* Añade un margen superior e inferior para separar los botones */
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #3c5d6e;
-  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  border-radius: 5px;
   outline: none;
   transition: 0.3s;
   border: 2px solid transparent;
