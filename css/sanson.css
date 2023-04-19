@@ -219,7 +219,7 @@ Con esto, el texto en el centro de la página se moverá de arriba a abajo en un
   position: fixed;
   text-transform: uppercase;
   justify-content: start;
-  top: 10px;
+  top: 10;
   right: 0;
   padding: 10px;
   color: #282828;
@@ -255,7 +255,7 @@ Con esto, el texto en el centro de la página se moverá de arriba a abajo en un
   
   text-transform: uppercase;
   justify-content: start;
-  top: 10px;
+  top: 10;
   right: 0;
   padding: 10px;
   
