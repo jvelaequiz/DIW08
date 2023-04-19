@@ -20,6 +20,66 @@ body{
 	box-sizing: border-box;
 }
 
+.header {
+  grid-area:HEADER;
+  color: white;
+  background: black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.content {
+  grid-area: CONTENT ;
+}
+
+.footer1 {
+  grid-area: FOOTER1;
+  background-color:#e08c32;
+}
+.footer2 {
+  grid-area: FOOTER2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer3 {
+  grid-area: FOOTER3;
+  background-color:#e08c32;
+}
+
+/* Having defined these names I then create my layout. This time, instead of placing my items using line numbers specified on the items themselves, I create the whole layout on the grid container.*/
+.wrapper {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr; /* Define columnas */
+grid-template-rows: 100px 1fr 1fr 1fr 100px /* Aquí se establece la altura de la segunda fila en 100px */
+gap: 0px 0px;/* Espacio entre columnas y filas */ 
+grid-template-areas:
+  "HEADER    HEADER  HEADER "
+  "CONTENT  CONTENT  ASIDE "
+  "CONTENT  CONTENT  ASIDE "
+  "CONTENT  CONTENT  ASIDE "
+  "FOOTER1  FOOTER2  FOOTER3 ";
+}
+/*Using this method we do not need to specify anything at all on the individual grid items, everything happens on our grid container. We can see the layout described as the value of the grid-template-areas property.*/
+/*
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas:
+      "hd hd hd hd   hd   hd   hd   hd   hd"
+      "sd sd sd main main main main main main"
+      "sd sd sd  ft  ft   ft   ft   ft   ft";
+  }
+}
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-areas:
+      "hd hd hd   hd   hd   hd   hd   hd hd"
+      "sd sd main main main main main ft ft";
+  }
+}
+*/
+
 strong{
 	color:red;
 }
@@ -82,30 +142,9 @@ También se ha establecido un fondo semitransparente al figcaption para mejorar 
   display: grid;
 }
 
-.centered-text h1 {
-  padding:10%;
-  animation: move-down 10s linear infinite;
-  font-family: "Galatia SIL", Georgia, serif;
-  color: #fe320f;
-  font-size: calc(3em + 7vw);
-  margin-bottom: 0.25em;
-  text-shadow: #f9eb08 0px 0 10px;
-}
 
-/*En este ejemplo, la animación dura 10 segundos (animation-duration: 4s), se ejecuta en un bucle infinito (animation-iteration-count: infinite), y tiene una aceleración uniforme (linear).
-Con esto, el texto en el centro de la página se moverá de arriba a abajo en un bucle infinito. Puedes ajustar la duración de la animación, la cantidad de veces que se repite la animación y los valores de transformación de la animación para obtener el efecto que desees.*/
 
-@keyframes move-down {
-  0% {
-    transform: translateY(-100%);
-  }
-  50% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
-}
+
 
 /*
 En este ejemplo, la animación move-down mueve el elemento de texto hacia arriba (translateY(-100%)) 
@@ -113,6 +152,7 @@ durante el primer 50% de la animación, luego hacia abajo (translateY(100%)) dur
 de la animación, y luego hacia arriba nuevamente al final (translateY(-100%)).
 Luego, aplica la animación al elemento de texto usando la propiedad animation en conjunto con 
 la propiedad animation-duration y animation-iteration-count:*/
+
 .rcorners1 {
   border-radius: 50%;
   background: white;
@@ -139,12 +179,92 @@ la propiedad animation-duration y animation-iteration-count:*/
   text-shadow: #f9eb08 0px 0 10px;
 }
 
-.texto-vertical{
-  padding-top:10%;
+
+
+/* reglas CSS para navegadores que soportan CSS Grid */
+@supports (display: grid) {
+
+  .sidebar {
+  grid-area: ASIDE;
+  }
+
+  .centered-text h1 {
+  padding:10%;
+  animation: move-down 10s linear infinite;
+  font-family: "Galatia SIL", Georgia, serif;
+  color: #fe320f;
+  font-size: calc(3em + 7vw);
+  margin-bottom: 0.25em;
+  text-shadow: #f9eb08 0px 0 10px;
+  }
+
+  /*En este ejemplo, la animación dura 10 segundos (animation-duration: 4s), se ejecuta en un bucle infinito (animation-iteration-count: infinite), y tiene una aceleración uniforme (linear).
+Con esto, el texto en el centro de la página se moverá de arriba a abajo en un bucle infinito. Puedes ajustar la duración de la animación, la cantidad de veces que se repite la animación y los valores de transformación de la animación para obtener el efecto que desees.*/
+
+  @keyframes move-down {
+    0% {
+      transform: translateY(-100%);
+    }
+    50% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+  .texto-vertical{
+  padding-top: 10%;
+  writing-mode: vertical-rl;
+  position: fixed;
   text-transform: uppercase;
   justify-content: start;
-  text-align: right;
+  top: 10;
+  right: 0;
+  padding: 10px;
+  color: #282828;
+  background-color:#e08c32;
+  font-size: 26px;
+  line-height: 1.5;
+  text-overflow: 2;
+  text-align: center;
+}
+
+}
+
+/* reglas CSS para navegadores que no soportan CSS Grid */
+@supports not (display: grid) {
+
+  .centered-text h1 {
+  padding:10%;
+  font-family: "Galatia SIL", Georgia, serif;
+  color: #fe320f;
+  font-size: calc(3em + 7vw);
+  margin-bottom: 0.25em;
+  text-shadow: #f9eb08 0px 0 10px;
+  }
+
+  .sidebar {
+    color: #282828;
+  background-color:#e08c32;
+  position: ABSOLUTE;
+  z-index: 1000; /* valor de z-index menor */
+  }
+
+  .texto-vertical{
+  padding-top: 10%;
   writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
+  
+  text-transform: uppercase;
+  justify-content: start;
+  top: 10;
+  right: 0;
+  padding: 10px;
+  
+  font-size: 26px;
+  line-height: 1.5;
+  text-overflow: 2;
+  text-align: center;
+}
 
 }
