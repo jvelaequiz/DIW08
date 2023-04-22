@@ -47,11 +47,10 @@ body{
   background-color:#e08c32;
 }
 
-/* Having defined these names I then create my layout. This time, instead of placing my items using line numbers specified on the items themselves, I create the whole layout on the grid container.*/
 .wrapper {
 display: grid;
-grid-template-columns: 1fr 1fr 1fr; /* Define columnas */
-grid-template-rows: 100px 1fr 1fr 1fr 100px /* Aquí se establece la altura de la segunda fila en 100px */
+grid-template-columns: 1fr 1fr 1fr; /* Define el tamaño de  columnas */
+grid-template-rows: 0.25fr 1fr 1fr 1fr 0.25fr; /* Aquí se establece la altura de las filas*/
 gap: 0px 0px;/* Espacio entre columnas y filas */ 
 grid-template-areas:
   "HEADER    HEADER  HEADER "
@@ -60,25 +59,6 @@ grid-template-areas:
   "CONTENT  CONTENT  ASIDE "
   "FOOTER1  FOOTER2  FOOTER3 ";
 }
-/*Using this method we do not need to specify anything at all on the individual grid items, everything happens on our grid container. We can see the layout described as the value of the grid-template-areas property.*/
-/*
-@media (min-width: 500px) {
-  .wrapper {
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-areas:
-      "hd hd hd hd   hd   hd   hd   hd   hd"
-      "sd sd sd main main main main main main"
-      "sd sd sd  ft  ft   ft   ft   ft   ft";
-  }
-}
-@media (min-width: 700px) {
-  .wrapper {
-    grid-template-areas:
-      "hd hd hd   hd   hd   hd   hd   hd hd"
-      "sd sd main main main main main ft ft";
-  }
-}
-*/
 
 strong{
 	color:red;
@@ -93,6 +73,14 @@ strong{
   color: #A9A8A3;
   font-size: 5vw;
 }
+
+.texto-normal{
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: start;
+    font-size: 1.5vw;
+    text-align: left;
+  }
 
 /*El elemento figure se establece en posición relativa para permitir que el elemento figcaption 
 se posicione en relación con él. El elemento figcaption se establece en posición absoluta y se 
@@ -133,16 +121,14 @@ También se ha establecido un fondo semitransparente al figcaption para mejorar 
 }
 
 .centered-text {
-  grid-area: 2 / 1 / 3 / 2; /* Define área de la cuadrícula */
+  grid-area: 2 / 1 / 3 / 2; /* Define área de la cuadrícula para el poster */
   display: grid;
 }
 
 .aside {
-  grid-area: 2 / 1 / 3 / 2; /* Define área de la cuadrícula */
+  grid-area: 2 / 1 / 3 / 2; /* Define área de la cuadrícula para la información lateral */
   display: grid;
 }
-
-
 
 
 
@@ -172,6 +158,7 @@ la propiedad animation-duration y animation-iteration-count:*/
   border-radius: 50%;
   background: white;
   margin-bottom: 0.25em;
+  margin-top: 1.5em;
   padding:10%;
   text-align: center;  
   color: blue;

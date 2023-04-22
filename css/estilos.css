@@ -201,6 +201,7 @@ footer .legal-links li{
 	color:white;
 }
 
+/*Cambio de colores en el fondo del div*/
 .page-home .featured{
 	max-width: 470px;
 	/*animation: pulse 5s infinite;*/
@@ -394,6 +395,11 @@ label.required::after {
   width: 100%;
 }
 
+
+/*
+El valor ease-in-out describe una animación que comienza lentamente, acelera en el medio de la animación y luego se desacelera antes de finalizar. 
+Crea una animación suave y natural que no se siente demasiado abrupta al comienzo o al final.
+*/
 #contenedor-imagen img {
 	position: absolute;
   z-index: -1;
@@ -416,6 +422,7 @@ label.required::after {
 }
 
 /*****ANIMACION 2*******/
+/*Cambio de colores*/
 @keyframes pulse {
   0% {
    background-color: var(--secondary-color);
